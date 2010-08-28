@@ -1,0 +1,82 @@
+GIT
+  remote: http://github.com/padrino/padrino-framework.git
+  revision: 105a35b
+  tag: 0.9.15
+  specs:
+    padrino (0.9.15)
+      padrino-admin (= 0.9.15)
+      padrino-core (= 0.9.15)
+      padrino-gen (= 0.9.15)
+      padrino-helpers (= 0.9.15)
+      padrino-mailer (= 0.9.15)
+    padrino-admin (0.9.15)
+      padrino-core (= 0.9.15)
+      padrino-gen (= 0.9.15)
+      padrino-helpers (= 0.9.15)
+    padrino-core (0.9.15)
+      activesupport (>= 2.3.8)
+      http_router (>= 0.3.13)
+      sinatra (>= 1.0.0)
+      thor (>= 0.13.0)
+    padrino-gen (0.9.15)
+      bundler (>= 1.0.0.rc.2)
+      git
+      padrino-core (= 0.9.15)
+    padrino-helpers (0.9.15)
+      i18n (>= 0.4.1)
+      padrino-core (= 0.9.15)
+    padrino-mailer (0.9.15)
+      mail (>= 2.2.0)
+      padrino-core (= 0.9.15)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activesupport (2.3.8)
+    daemons (1.1.0)
+    eventmachine (0.12.10)
+    git (1.2.5)
+    haml (3.0.17)
+    http_router (0.3.13)
+      rack (>= 1.0)
+      url_mount (>= 0.2.1)
+    i18n (0.4.1)
+    json (1.4.6)
+    mail (2.2.5)
+      activesupport (>= 2.3.6)
+      mime-types
+      treetop (>= 1.4.5)
+    mime-types (1.16)
+    ohm (0.0.38)
+      redis (>= 1.0.4)
+    ohm-contrib (0.0.31)
+    polyglot (0.3.1)
+    rack (1.2.1)
+    rack-flash (0.1.1)
+      rack
+    rake (0.8.7)
+    redis (2.0.5)
+    sinatra (1.0)
+      rack (>= 1.0)
+    thin (1.2.7)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
+    thor (0.14.0)
+    treetop (1.4.8)
+      polyglot (>= 0.3.1)
+    url_mount (0.2.1)
+      rack
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  haml
+  json
+  ohm
+  ohm-contrib
+  padrino!
+  rack-flash
+  rake
+  thin

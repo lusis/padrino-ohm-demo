@@ -1,0 +1,33 @@
+.block
+  .secondary-navigation
+    %ul.wat-cf
+      %li.first.active=link_to pat(:list), url(:posts, :index)
+      %li=link_to pat(:new), url(:posts, :new)
+  .content
+    %h2.title
+      =pat(:all)
+      =mt(:post)
+    .inner
+      %table.table
+        %tr
+          %th.first=mat(:post, :created_at)
+          %th=mat(:post, :updated_at)
+          %th=mat(:post, :title)
+          %th=mat(:post, :author)
+          %th=mat(:post, :body)
+          %th.last="&nbsp;"
+        -@posts.each do |post|
+          %tr
+            %td.first=post.created_at
+            %td=post.updated_at
+            %td=post.title
+            %td=post.author
+            %td=post.body
+            %td.last
+              =button_to pat(:edit), url(:posts, :edit, :id => post.id), :method => :get, :class => :button_to
+              ="|"
+              =button_to pat(:delete), url(:posts, :destroy, :id => post.id), :method => :delete, :class => :button_to
+      .actions-bar.wat-cf
+        .actions="&nbsp;"
+
+-content_for :sidebar, partial("base/sidebar")
