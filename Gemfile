@@ -15,4 +15,4 @@ gem 'json'
 
 
 # Padrino
-gem 'padrino', :git => "http://github.com/padrino/padrino-framework.git", :tag => "0.9.15"
+gem 'padrino', :git => "http://github.com/lusis/padrino-framework.git", :branch => "ohm"

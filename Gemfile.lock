@@ -1,7 +1,7 @@
 GIT
-  remote: http://github.com/padrino/padrino-framework.git
-  revision: 105a35b
-  tag: 0.9.15
+  remote: http://github.com/lusis/padrino-framework.git
+  revision: feee69b
+  branch: ohm
   specs:
     padrino (0.9.15)
       padrino-admin (= 0.9.15)
