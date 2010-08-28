@@ -1,4 +1,4 @@
-Padrino and Riak Sample Application
+Padrino and Redis Sample Application
 =========================================
 
 This is a sample application showing how to use [Padrino](http://padrinorb.com) with [Redis via Ohm](http://github.com/soveran/ohm)
